@@ -1,0 +1,1 @@
+mvn clean package && java -jar target/course-api-*.jar
