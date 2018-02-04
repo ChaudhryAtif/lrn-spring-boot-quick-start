@@ -1,0 +1,24 @@
+*/.tmp/
+*.log
+*/target/
+
+# IntelliJ
+.idea
+*.iml
+out/
+
+# Eclipse
+target/
+.settings/
+.springBeans
+.classpath
+.project
+bin/
+*.launch
+
+# VS Code
+.vscode
+
+#System Files
+.DS_Store
+Thumbs.db
