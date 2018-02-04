@@ -35,9 +35,9 @@ public class TopicController {
         topicService.add(topic);
     }
 
-    @RequestMapping(value = "/topics/{id}", method = PUT, produces = APPLICATION_JSON_VALUE)
-    public void update(@PathVariable Long id, @RequestBody Topic topic) {
-        topicService.update(id, topic);
+    @RequestMapping(value = "/topics", method = PUT, produces = APPLICATION_JSON_VALUE)
+    public void update(@RequestBody Topic topic) {
+        topicService.update(topic);
     }
 
     @RequestMapping(value = "/topics/{id}", method = DELETE)
