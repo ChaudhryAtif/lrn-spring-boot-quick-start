@@ -13,8 +13,8 @@ public class CourseService {
     @Autowired
     private CourseRepository courseRepository;
 
-    public List<Course> getAllCoursesByTopicId(Long id) {
-        return courseRepository.findAll();
+    public List<Course> getAllByTopicId(Long topicId) {
+        return courseRepository.findByTopicId(topicId);
     }
 
     public Course getOne(Long id) {

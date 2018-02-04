@@ -22,8 +22,8 @@ public class CourseController {
     private CourseService courseService;
 
     @RequestMapping(value = "/topics/{topicId}/courses", method = GET, produces = APPLICATION_JSON_VALUE)
-    public List<Course> getAllCoursesByTopicId(@PathVariable Long topicId) {
-        return courseService.getAllCoursesByTopicId(topicId);
+    public List<Course> getAllByTopicId(@PathVariable Long topicId) {
+        return courseService.getAllByTopicId(topicId);
     }
 
     @RequestMapping(value = "/topics/{topicId}/courses/{id}", method = GET, produces = APPLICATION_JSON_VALUE)
